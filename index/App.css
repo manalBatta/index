@@ -1,0 +1,202 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handjet&family=Noto+Sans+Arabic&family=Nunito:wght@200;300;400;600;700;1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@300;900&family=Rubik:wght@300;900&family=Tajawal&display=swap");
+* {
+  font-family: "Robot", sans-serif;
+}
+body {
+  height: 100vh;
+  overflow: hidden scroll;
+  font-family: "Robot", sans-serif;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 1em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.bg {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-image: url(http://i.imgur.com/w16HASj.png);
+  background-size: 100% 100%;
+  background-position: top center;
+}
+
+.content {
+  margin-top: 20%;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.InputStyle {
+  border-radius: 25px;
+  border: solid 1px white;
+  background: transparent;
+  width: 300px;
+  padding: 10px 20px;
+  font-family: Arial, FontAwesome;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: white;
+}
+
+.social-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 47%;
+}
+
+i {
+  padding: 5px;
+  color: white;
+}
+
+input,
+input:focus {
+  border: solid 1px white;
+  outline: 0;
+  -webkit-appearance: none;
+  box-shadow: nones;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.secondLine {
+  font-weight: 350;
+  font-size: 15px;
+  margin-bottom: 15%;
+  color: white;
+}
+
+.firstLine {
+  font-size: 30px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .firstLine {
+    font-size: 20px;
+  }
+}
+.btn-sign {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  border-radius: 25px;
+  border: solid 1px white;
+  width: 150px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.btn-sign:hover {
+  transition-duration: 0.1s;
+  background-color: rgba(255, 255, 255, 0.489);
+}
+/* chat Area css */
+
+.mask-custom {
+  background: rgba(24, 24, 16, 0.2);
+  border-radius: 2em;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+.search-bar {
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  padding: 3px 6px;
+  margin: 2px;
+  margin-bottom: 6px;
+  background-color: transparent;
+  width: 90%;
+  height: 50px;
+  border-radius: 0.5em;
+  font-size: 17px;
+  font-family: "Robot", sans-serif;
+  color: rgb(249, 249, 249);
+}
+.search-bar::placeholder {
+  font-size: 17px;
+  font-family: "Robot", sans-serif;
+  color: #888;
+}
+#searchbtn {
+  position: absolute;
+  right: 16%;
+  background-color: transparent;
+  color: white;
+  border: 2px rgba(255, 255, 255, 0.05) solid;
+  padding: 8px 10px;
+  border-radius: 0.5em;
+  /* height: 36%; */
+}
+#sendbtn {
+  background-color: transparent;
+  color: white;
+  border: 2px rgba(255, 255, 255, 0.05) solid;
+  padding: 8px 10px;
+  border-radius: 0.5em;
+  height: 60px;
+}
+.markerless {
+  list-style-type: none;
+}
+@font-face {
+  font-family: "beautiful-people-font";
+  src: url("./beautiful-people-font/BeautifulPeoplePersonalUse-dE0g.ttf")
+    format("truetype");
+  /* Add more src URLs if you have different font formats */
+  font-weight: bold;
+  font-style: normal;
+}
+.FontTitle {
+  font-family: "beautiful-people-font", sans-serif;
+  font-size: 2rem;
+}
